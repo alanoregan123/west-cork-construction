@@ -1,0 +1,190 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+    title="About Us | West Cork Construction & Maintenance Ltd"
+    description="Learn about West Cork Construction & Maintenance Ltd, providing professional building, roofing, renovation and property maintenance services throughout West Cork."
+>
+
+<Navbar />
+
+<main>
+
+    <section class="about-hero">
+        <h1>About West Cork Construction & Maintenance Ltd</h1>
+        <p>Quality workmanship. Reliable service. Local expertise.</p>
+    </section>
+
+    <section class="about-content">
+
+        <h2>Local Builders Serving West Cork</h2>
+
+        <p>
+            West Cork Construction & Maintenance Ltd provides professional
+            construction, roofing, renovations, extensions and property
+            maintenance services throughout West Cork.
+        </p>
+
+        <p>
+            We take pride in delivering quality workmanship and dependable
+            service on every project, from smaller repairs and maintenance
+            work to larger renovations, extensions and new builds.
+        </p>
+
+        <p>
+            We work with homeowners, landlords and businesses across West Cork,
+            including Clonakilty, Skibbereen, Rosscarbery, Dunmanway, Bandon,
+            Glandore, Leap, Castletownshend, Enniskeane and surrounding areas.
+        </p>
+
+        <h2>Why Choose Us?</h2>
+
+        <div class="features">
+
+            <div class="feature">
+                <span>🛡️</span>
+                <h3>Fully Insured</h3>
+                <p>Professional and responsible service on every project.</p>
+            </div>
+
+            <div class="feature">
+                <span>🏅</span>
+                <h3>Quality Workmanship</h3>
+                <p>We take pride in delivering a high standard of finish.</p>
+            </div>
+
+            <div class="feature">
+                <span>🤝</span>
+                <h3>Reliable Service</h3>
+                <p>Clear communication and dependable workmanship from start to finish.</p>
+            </div>
+
+            <div class="feature">
+                <span>📋</span>
+                <h3>Free Quotations</h3>
+                <p>Get a clear quotation before work begins.</p>
+            </div>
+
+        </div>
+
+        <div class="cta">
+            <h2>Planning Your Next Project?</h2>
+            <p>Contact us today for a free, no-obligation quotation.</p>
+            <a href="/contact" class="btn">Request a Free Quote</a>
+        </div>
+
+    </section>
+
+</main>
+
+<Footer />
+
+</Layout>
+
+<style>
+.about-hero{
+    padding:120px 10% 80px;
+    text-align:center;
+    background:#111;
+    color:#fff;
+}
+
+.about-hero h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.about-hero p{
+    font-size:1.2rem;
+    color:#ddd;
+}
+
+.about-content{
+    max-width:1000px;
+    margin:auto;
+    padding:80px 10%;
+}
+
+.about-content h2{
+    font-size:2rem;
+    margin:40px 0 20px;
+}
+
+.about-content p{
+    line-height:1.8;
+    margin-bottom:20px;
+    color:#555;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin:40px 0 70px;
+}
+
+.feature{
+    padding:30px 20px;
+    text-align:center;
+    border:1px solid #eee;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.feature:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 25px rgba(0,0,0,.1);
+}
+
+.feature span{
+    font-size:2rem;
+}
+
+.feature h3{
+    margin:15px 0 10px;
+}
+
+.feature p{
+    font-size:.95rem;
+    margin:0;
+}
+
+.cta{
+    text-align:center;
+    background:#111;
+    color:#fff;
+    padding:50px 30px;
+    border-radius:10px;
+}
+
+.cta h2{
+    margin-top:0;
+}
+
+.cta p{
+    color:#ddd;
+}
+
+.btn{
+    display:inline-block;
+    background:#d97b18;
+    color:#fff;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+    .about-hero h1{
+        font-size:2.2rem;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+    }
+}
+</style>

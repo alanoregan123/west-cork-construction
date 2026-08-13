@@ -6,7 +6,7 @@
 
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <title>West Cork Construction & Maintenance Ltd | Builders, Roofing & Renovations in West Cork</title>
 <meta
@@ -89,12 +89,22 @@ background:#f8f8f8;
 color:#222;
 line-height:1.6;
 }
-
+html,
+body {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
 header{
 position:fixed;
 top:0;
 left:0;
+right:0;
 width:100%;
+max-width:100%;
+box-sizing:border-box;
+overflow:hidden;
 background:rgba(17,17,17,.75);
 backdrop-filter:blur(10px);
 padding:14px 20px;
@@ -104,7 +114,10 @@ align-items:center;
 box-shadow:0 5px 20px rgba(0,0,0,.25);
 z-index:9999;
 }
-
+header > * {
+  min-width:0;
+  max-width:100%;
+}
 .logo{
     display:flex;
     align-items:center;
@@ -196,7 +209,8 @@ font-weight:600;
     max-width:700px;
 }
 .hero-line{
-    width:550px;
+    width:100%;
+    max-width:550px;
     height:4px;
     background:#d97b18;
     border-radius:10px;
@@ -400,19 +414,43 @@ margin-bottom:20px;
     line-height:1.8;
     font-size:1.1rem;
 }
-@media(max-width:768px){
+@media (max-width:768px) {
+  header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    z-index: 99999 !important;
+    flex-direction: column;
+    gap: 20px;
+  }
 
-header{
-flex-direction:column;
-gap:20px;
-}
+  .hero-line {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
 
-nav{
-flex-wrap:wrap;
-justify-content:center;
-}
+  .whatsapp {
+    right: 20px !important;
+    max-width: calc(100% - 40px) !important;
+  }
 
-.hero h1{
+  img {
+    max-width: 100%;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.hero h1 {
 font-size:2.5rem;
 }
 
@@ -617,6 +655,15 @@ font-size:2.5rem;
 .whatsapp:hover{
     transform:scale(1.1);
     box-shadow:0 15px 35px rgba(37,211,102,.45);
+}
+.project-card img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 220px !important;
+  object-fit: cover !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 </style>
 
@@ -1000,7 +1047,7 @@ Take a look at some of our recently completed projects across West Cork.
         Facebook
     </a>
 
-    <a href=https://www.instagram.com/west__cork_construction_ltd/target="_blank">
+    <a href="https://www.instagram.com/west__cork_construction_ltd/" target="_blank" rel="noopener noreferrer">
         <img src="/images/instagram.png" alt="Instagram">
         Instagram
     </a>

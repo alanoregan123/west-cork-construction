@@ -1,0 +1,190 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Navbar from "../../components/Navbar.astro";
+import Footer from "../../components/Footer.astro";
+---
+
+<Layout
+    title="Builders in West Cork | West Cork Construction & Maintenance Ltd"
+    description="Professional builders serving Clonakilty, Skibbereen, Rosscarbery, Dunmanway, Bandon and throughout West Cork. Free quotations available."
+>
+
+<Navbar />
+
+<main>
+
+<section class="hero">
+    <h1>Builders in West Cork</h1>
+    <p>
+        Professional building and construction services throughout West Cork.
+    </p>
+</section>
+
+<section class="content">
+
+    <h2>Professional Building Contractors in West Cork</h2>
+
+    <p>
+        West Cork Construction & Maintenance Ltd provides professional
+        building services for homeowners, landlords and businesses throughout
+        West Cork.
+    </p>
+
+    <p>
+        From smaller building repairs and maintenance work to renovations,
+        extensions and larger construction projects, we provide reliable
+        workmanship and a professional service from start to finish.
+    </p>
+
+    <h2>Our Building Services</h2>
+
+    <div class="services">
+
+        <div>
+            <h3>🏠 New Builds</h3>
+            <p>
+                Construction services for new homes and buildings,
+                with quality workmanship throughout the project.
+            </p>
+        </div>
+
+        <div>
+            <h3>🔨 Renovations</h3>
+            <p>
+                Home renovations and property improvements designed
+                around your needs.
+            </p>
+        </div>
+
+        <div>
+            <h3>🧱 Extensions</h3>
+            <p>
+                Modern extensions that provide additional space and
+                improve your home.
+            </p>
+        </div>
+
+        <div>
+            <h3>🛠️ General Building</h3>
+            <p>
+                General construction, repairs, alterations and
+                maintenance work.
+            </p>
+        </div>
+
+    </div>
+
+    <h2>Areas We Cover</h2>
+
+    <p>
+        We provide building services throughout West Cork including
+        <strong>Clonakilty, Skibbereen, Rosscarbery, Dunmanway, Bandon,
+        Glandore, Leap, Castletownshend and Enniskeane</strong>, as well
+        as surrounding areas.
+    </p>
+
+    <div class="cta">
+        <h2>Planning a Building Project?</h2>
+
+        <p>
+            Contact West Cork Construction & Maintenance Ltd today
+            for a free, no-obligation quotation.
+        </p>
+
+        <a href="/contact">Request a Free Quote</a>
+    </div>
+
+</section>
+
+</main>
+
+<Footer />
+
+</Layout>
+
+<style>
+.hero{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:110px 10% 80px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#ddd;
+    font-size:1.2rem;
+}
+
+.content{
+    max-width:1000px;
+    margin:auto;
+    padding:80px 10%;
+}
+
+.content h2{
+    margin-top:45px;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.content p{
+    line-height:1.8;
+    color:#555;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+    margin-top:30px;
+}
+
+.services div{
+    padding:30px;
+    border:1px solid #eee;
+    border-radius:10px;
+}
+
+.services h3{
+    margin-top:0;
+}
+
+.cta{
+    margin-top:60px;
+    padding:50px 30px;
+    background:#111;
+    color:#fff;
+    text-align:center;
+    border-radius:10px;
+}
+
+.cta p{
+    color:#ddd;
+    margin-bottom:25px;
+}
+
+.cta a{
+    display:inline-block;
+    background:#d97b18;
+    color:#fff;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+@media(max-width:700px){
+    .services{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+}
+</style>

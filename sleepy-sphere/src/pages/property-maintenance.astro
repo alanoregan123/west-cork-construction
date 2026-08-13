@@ -1,0 +1,204 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Navbar from "../../components/Navbar.astro";
+import Footer from "../../components/Footer.astro";
+---
+
+<Layout
+    title="Property Maintenance West Cork | West Cork Construction & Maintenance Ltd"
+    description="Reliable property maintenance and repair services throughout West Cork for homeowners, landlords and businesses."
+>
+
+<Navbar />
+
+<main>
+
+<section class="hero">
+    <h1>Property Maintenance in West Cork</h1>
+    <p>
+        Reliable property repairs and maintenance for homes and businesses.
+    </p>
+</section>
+
+<section class="content">
+
+    <h2>Reliable Property Maintenance</h2>
+
+    <p>
+        West Cork Construction & Maintenance Ltd provides professional
+        property maintenance and repair services throughout West Cork.
+    </p>
+
+    <p>
+        Regular maintenance can help protect your property, prevent small
+        problems becoming expensive repairs and keep your home or business
+        in good condition.
+    </p>
+
+    <div class="services">
+
+        <div>
+            <h3>🔧 General Repairs</h3>
+            <p>
+                General building repairs and maintenance for properties
+                of all types.
+            </p>
+        </div>
+
+        <div>
+            <h3>🌧️ Guttering</h3>
+            <p>
+                Gutter and downpipe repairs and maintenance to help
+                protect your property from water damage.
+            </p>
+        </div>
+
+        <div>
+            <h3>🏠 Roof Maintenance</h3>
+            <p>
+                Repairs and maintenance to help keep your roof weatherproof.
+            </p>
+        </div>
+
+        <div>
+            <h3>🧱 Exterior Repairs</h3>
+            <p>
+                Repairs and improvements to walls, exterior areas and
+                other parts of your property.
+            </p>
+        </div>
+
+        <div>
+            <h3>🚪 Doors & Windows</h3>
+            <p>
+                General repair and maintenance work around your property.
+            </p>
+        </div>
+
+        <div>
+            <h3>🏢 Commercial Maintenance</h3>
+            <p>
+                Maintenance and repair services for commercial properties
+                and landlords.
+            </p>
+        </div>
+
+    </div>
+
+    <h2>Serving West Cork</h2>
+
+    <p>
+        We provide property maintenance services throughout
+        <strong>Clonakilty, Skibbereen, Rosscarbery, Dunmanway, Bandon,
+        Glandore, Leap, Castletownshend and Enniskeane</strong> and
+        surrounding areas.
+    </p>
+
+    <div class="cta">
+        <h2>Need a Repair or Maintenance Work?</h2>
+
+        <p>
+            Contact us today for a free, no-obligation quotation.
+        </p>
+
+        <a href="/contact">Request a Free Quote</a>
+    </div>
+
+</section>
+
+</main>
+
+<Footer />
+
+</Layout>
+
+<style>
+.hero{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:110px 10% 80px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#ddd;
+    font-size:1.2rem;
+}
+
+.content{
+    max-width:1000px;
+    margin:auto;
+    padding:80px 10%;
+}
+
+.content h2{
+    margin-top:45px;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.content p{
+    line-height:1.8;
+    color:#555;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+    margin-top:35px;
+}
+
+.services div{
+    padding:30px;
+    border:1px solid #eee;
+    border-radius:10px;
+}
+
+.services h3{
+    margin-top:0;
+}
+
+.cta{
+    margin-top:60px;
+    padding:50px 30px;
+    background:#111;
+    color:#fff;
+    text-align:center;
+    border-radius:10px;
+}
+
+.cta h2{
+    margin-top:0;
+}
+
+.cta p{
+    color:#ddd;
+    margin-bottom:25px;
+}
+
+.cta a{
+    display:inline-block;
+    background:#d97b18;
+    color:#fff;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+@media(max-width:700px){
+    .services{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+}
+</style>
