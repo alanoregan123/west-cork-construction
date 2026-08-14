@@ -1,0 +1,108 @@
+---
+---
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div>
+      <h3>West Cork Construction & Maintenance Ltd</h3>
+      <p>
+        Professional construction, roofing, renovation, extensions and
+        property maintenance services throughout West Cork.
+      </p>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>
+        <a href="mailto:westcorkconstructionltd@gmail.com">
+          westcorkconstructionltd@gmail.com
+        </a>
+      </p>
+      <p>
+        <a href="https://wa.me/353876138413" target="_blank" rel="noopener noreferrer">
+          WhatsApp
+        </a>
+      </p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+
+      <a
+        href="https://www.facebook.com/people/West-cork-construction-maintenance-ltd/61571263686710/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Facebook
+      </a>
+
+      <a
+        href="https://www.instagram.com/west__cork__construction__ltd/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Instagram
+      </a>
+    </div>
+  </div>
+
+  <div class="copyright">
+    © {new Date().getFullYear()} West Cork Construction & Maintenance Ltd.
+    All rights reserved.
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-top: 50px;
+    padding: 40px 30px 20px;
+    background: #111;
+    color: white;
+  }
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  .site-footer h3 {
+    margin-top: 0;
+  }
+
+  .site-footer p {
+    line-height: 1.6;
+  }
+
+  .site-footer a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .site-footer a:hover {
+    color: #25d366;
+  }
+
+  .footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .copyright {
+    max-width: 1200px;
+    margin: 30px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  @media (max-width: 700px) {
+    .footer-content {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
